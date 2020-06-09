@@ -5,39 +5,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Dynamo Db service</name>
   <description>Dynamo Database service for the Shopped application</description>
-<!--   <dependencyManagement> -->
-<!--   <dependencies> -->
-<!--     <dependency> -->
-<!--       <groupId>com.amazonaws</groupId> -->
-<!--       <artifactId>aws-java-sdk-bom</artifactId> -->
-<!--       <version>1.11.797</version> -->
-<!--       <type>pom</type> -->
-<!--       <scope>import</scope> -->
-<!--     </dependency> -->
-<!--   </dependencies> -->
-<!-- </dependencyManagement> -->
-<!-- <dependencies> -->
-<!--   <dependency> -->
-<!--     <groupId>com.amazonaws</groupId> -->
-<!--     <artifactId>aws-java-sdk-s3</artifactId> -->
-<!--   </dependency> -->
-<!--   <dependency> -->
-<!--     <groupId>com.amazonaws</groupId> -->
-<!--     <artifactId>aws-java-sdk-dynamodb</artifactId> -->
-<!--   </dependency> -->
-<!-- </dependencies> -->
-  <dependencies>
-  	 <dependency>
-       <groupId>com.amazonaws</groupId>
-       <artifactId>DynamoDBLocal</artifactId>
-       <version>[1.12,2.0)</version>
-    </dependency>
-  </dependencies>
-  <repositories>
-    <repository>
-       <id>dynamodb-local-oregon</id>
-       <name>DynamoDB Local Release Repository</name>
-       <url>https://s3-us-west-2.amazonaws.com/dynamodb-local/release</url>
-    </repository>
-  </repositories>
+	<dependencies>
+	  <dependency>
+	    <groupId>com.amazonaws</groupId>
+	    <artifactId>aws-java-sdk</artifactId>
+	    <version>1.11.327</version>
+	  </dependency>
+	</dependencies>
 </project>
