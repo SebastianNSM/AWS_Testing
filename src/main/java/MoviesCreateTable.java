@@ -19,12 +19,12 @@ public class MoviesCreateTable {
 		BasicAWSCredentials awsCredentials = new BasicAWSCredentials("AKIAUSQPCM5NPQ7A5HOZ", "/RKqFaPe065GhC7wM9YnSx0/4TPhx8eT1h/ueQ7U");
 		AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard()
 				.withCredentials(new AWSStaticCredentialsProvider(awsCredentials))
-				.withRegion(Regions.US_EAST_2)
+				.withRegion(Regions.US_WEST_2)
 				.build();
 		
 		DynamoDB dynamoDB = new DynamoDB(client);
 		
-		String tableName = "Movies";
+		String tableName = "Songs";
 		
 		try {
 			System.out.println("Attempting to create table; please wait...");
